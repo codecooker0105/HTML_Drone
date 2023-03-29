@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://i.postimg.cc/2jtKpGMM/pic.jpg);
+}
+
+#drone_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#drone_box #point {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0px;
+    height: 0px;
+    border: 2px solid white;
+}
+.drone-pic{
+    width: 100%;
+}
+.left-pic{
+    width: 80px;
+    top:0;
+    left: -11px;
+    position: absolute;
+    animation: rotation .2s linear infinite;
+}
+.right-pic{
+    width: 80px;
+    top:0;
+    right: -11px;
+    position: absolute;
+    animation: rotation .2s linear infinite;
+}
+@keyframes rotation{
+    100%{
+        transform:rotateY(360deg);
+    }
+}
